@@ -21,11 +21,6 @@ const Data = [
 
 const HeaderMiddleSection = () => {
 
- 
-  const signmouseover = () => {
-    alert("Clicked")
-  }
-
   return (
     <div>
       <div className="HeaderContainer">
