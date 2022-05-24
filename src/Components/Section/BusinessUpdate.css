@@ -1,0 +1,42 @@
+.ImgWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f3f3f3;
+}
+
+
+.secbottom_Item img {
+    height: 100%;
+}
+
+.secbottom {
+    align-items: normal;
+}
+
+.secbottom_Text {
+    background: #f3f3f3;
+    flex: 1 1 50%;
+    padding: 15px 0px;
+    margin-top: 10px;
+}
+
+.secbottom_Text p {
+    margin-left: 25px;
+    padding-bottom: 8px;
+}
+
+.secbottom_Text a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: red;
+    margin-left: 25px;
+}
+
+@media only screen and (max-width:767px) {
+    secbottom .secbottom_Item {
+        margin-bottom: 10px;
+    }
+}

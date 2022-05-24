@@ -1,0 +1,211 @@
+
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.Logo {
+    max-width: 160px;
+    width: 100%;
+}
+
+.SearchSection,
+.SearchBax {
+    width: 100%;
+    display: flex;
+    max-width: 685px;
+    align-items: center;
+    justify-content: center;
+}
+
+.SerchInput input {
+    max-width: 100%;
+    width: 100%;
+    height: 30px;
+    padding: 6px;
+    border-radius: 0;
+    border: 1px solid;
+}
+
+.SerchInput input :focus {
+    border: 1px solid;
+    border-radius: 0px;
+    outline: 0;
+}
+
+
+.SerchInput {
+    display: flex;
+    max-width: 465px;
+    width: 100%;
+    flex: 1;
+}
+
+.SearchBtn {
+    border-radius:0 3px 3px 0;
+    border: 1px solid #444;
+    background: #444;
+    color: white;
+    padding: 1px 19px;
+    cursor: pointer;
+}
+.InkBtn {
+    margin-left: 20px;
+}
+
+.InkBtn a {
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 400;
+    font-size: 14px;
+}
+.InkBtn a:hover{
+    background-color: rgb(65, 65, 65);
+    color: white;
+    transition: 0.2s;
+}
+
+.Menu-Section ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    
+}
+
+.Menu-Section ul li {
+    border-left: 1px solid #e7e7e7;
+    min-height: 60px;
+    width: 100%;
+}
+
+li button {
+    border: unset;
+    background: transparent;
+    color: #444;
+    text-align: center;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+}
+.Icons{
+    border: unset;
+    color: rgb(73, 72, 72);
+    position: absolute;
+    top: 10px;
+    margin-left: -15px;
+    margin-top:5px;    
+}
+.icontext {
+   text-transform: capitalize;
+   position: relative;
+   border: unset;
+   color: rgb(49, 47, 47);     
+}   
+.Menu-Section ul li:first-child .Icons{
+     background-color: white;
+     position: relative;
+     color: rgb(73, 72, 72);
+     top:12px;
+     left: 20px;
+}
+
+.Menu-Section ul li:first-child .icontext{
+     background-color: white;
+     position: relative;
+     top: 4px;
+     
+}
+.Menu-Section ul li:last-child .Icons{
+  color: white;   
+}
+
+.Menu-Section ul li:last-child .icontext{
+    position: relative;
+    color: white;
+    top: 25px;
+    left: -14px;
+ 
+}
+.Menu-Section ul li:last-child {
+    position: relative;
+    background-color: #c00;
+    border-radius:0 0 5px 5px;
+    width: 70px;
+    height: 70px;
+}
+
+.Menu-Section ul li:last-child::after {
+    min-height: 10px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    border-radius: 0 0 3px 3px;
+    bottom: -6px;
+}
+
+ /* Responsive code */
+@media only screen and (max-width:1023px) {
+    .HeaderContainer {
+        flex-flow: row wrap;
+        background: #fff;
+        height: auto;
+    }
+
+    .SearchSection {
+        flex: 1 1 100%;
+        order: 3;
+        max-width: 100%;
+        padding: 10px 15px;
+        border-top: 1px solid #e7e7e7;
+    }
+    .Icons{
+        visibility: visible;
+       
+    }
+    .icontext{
+        visibility: visible;
+        
+    }
+
+    .SearchBax {
+        margin: 0 auto;
+    }
+
+    .Logo {
+        margin-left: 38px;
+        max-width: 132px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+
+    .Menu-Section ul li {
+        min-width: 45px;
+        min-height: auto;
+        border-left: 0;
+    }
+
+    button {
+        min-height: auto;
+    }
+    .Icons{
+        visibility: visible;
+       
+    }
+    .icontext{
+        visibility: visible;
+        
+    }
+
+   
+}

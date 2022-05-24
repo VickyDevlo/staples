@@ -1,0 +1,57 @@
+.flyer {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+.topflyer {
+    display: flex;
+    background: #f3f3f3;
+    flex: 1 1 50%;
+    padding: 0 10px;
+}
+
+.textflyer {
+    max-width: 400px;
+    margin-left: 30px;
+    padding: 0px 0px 15px;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+p {
+    padding: 8px 0;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:767px) {
+
+.flyer {
+        flex-wrap: wrap;
+
+    }
+.imgflyer{
+    display: block;
+    width: 100%;
+}
+
+.topflyer {
+
+        flex: 1 1 100%;
+        margin: 10px 0px 0;
+    }
+
+}

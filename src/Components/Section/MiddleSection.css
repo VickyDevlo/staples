@@ -1,0 +1,41 @@
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding:0;
+}
+
+.top_secItem {
+    margin:10px 3px 0;
+    max-width: calc(50% - 6px);
+    flex: 1 1 50%;
+}
+
+.top_secItem img {
+    width: 100%;
+}
+
+.right_Text img {
+    max-width: 780px;
+
+}
+
+
+@media only screen and (max-width:767px) {
+    img {
+        width: 100%;
+    }
+
+    .top-section div {
+        flex: 1 1 100%;
+
+
+    }
+
+    .top_secItem {
+        max-width: calc(100% - 6px);
+        margin: 0;
+    }
+}

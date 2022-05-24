@@ -1,0 +1,37 @@
+.brands{
+    display: flex;
+}
+.brands img{
+        width:100%;
+    }
+.BrandText{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}    
+.BrandText span{
+    border: unset;
+    color: #c00;
+    font-size: 24px;
+}
+.BrandItem {
+    margin: 10px 3px 0;
+    max-width: calc(50% - 6px);
+    flex: 1 1 50%;
+}
+
+ 
+
+@media only screen and (max-width:778px){
+    .BrandItem{
+        max-width: calc(100% - 6px);
+        flex: 1 1 100%;
+        margin: 0px 3px 20px;
+        
+    }
+    .brands{
+       
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

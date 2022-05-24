@@ -1,0 +1,14 @@
+ 
+.Slider
+{
+   margin-top: 15px; 
+   padding: 10px 10px;
+}
+    .Slider img{
+    /* width: 100%; */
+    height: 460px;    
+    max-width: 1440px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}

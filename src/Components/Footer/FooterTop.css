@@ -1,0 +1,147 @@
+.Footer-Wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(68,68,68);
+  
+}
+.footertop {
+  display: flex;
+  padding: 50px 0 10px 0;
+  
+}
+
+.footmenu {
+  flex: 1 1 50%;
+  padding: 0 4px;
+  margin-bottom: 15px;
+}
+
+.footmenu h3 {
+  margin-left: 10px;
+  font-size: 15px;
+  color: white;
+  font-weight:700;
+}
+.MenuList{
+    color: white;
+    margin: 10px;
+}
+.MenuList:hover{
+    color: white;
+}
+.MenuLine{
+  margin-top: -70px;
+}
+ 
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footmenu ul li {
+  padding: 6px 0;
+}
+
+ .foot_top {
+  background: #666;
+  padding: 20px 0;
+}
+
+.footmid {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.midImg {
+  display: flex;
+}
+
+.midImg img {
+  width: 48%;
+}
+
+.miditem h5 {
+  margin-left: 10px;
+  margin-bottom: 7px;
+  font-size: 14px;
+  color: white;
+}
+
+img {
+  margin-left: 0px;
+}
+
+.socialMedia {
+  font-size: larger;
+  color: white;
+  padding-right: 14px;
+}
+.SocialMediaIcons{
+    color: white;
+    margin: 10px;
+}
+.SocialMediaIcons:hover{
+    color: white;
+}
+
+.copyright {
+  padding: 10px;
+  background-color: rgb(68,68,68);
+}
+
+.copyright p{
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.copyright {
+    list-style: none;
+    height: 110px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Footer-list{
+    display: flex;    
+}
+
+.Footer-list a{
+    color: white;
+    margin: 1px;
+    padding: 0 10px;
+    font-size: 12px;
+          
+}
+.Footer-list .Links{
+    color: white;
+    margin: 1px;
+    padding: 0px 10px; 
+    font-size: 12px;
+    border-left: 1px solid rgb(122, 121, 121);         
+}
+ 
+
+
+@media only screen and (max-width: 600px) {
+  .footmid {
+    flex-wrap: wrap;
+  }
+  .midImg {
+    margin-top: 10px;
+  }
+  .midImg img {
+    margin-left: 0px !important;
+  }
+
+  .footertop {
+    flex-direction: column;
+  }
+}
