@@ -7,6 +7,7 @@ import {
   YouTube,
   Instagram,
 } from "@material-ui/icons";
+import { KeyboardArrowDown} from '@material-ui/icons'
 import { NavLink } from "react-router-dom";
 
 const footerItem = [
@@ -37,9 +38,12 @@ const footerItem = [
     link1: "Become a Customer",
     link2: "Govt. Customers",
     link3: "Membership",
-    text1:"Join the Staples Team",
-    link6:"Careers"
+    
   },
+  {
+    text:"Join the Staples Team",
+    link1:"Careers"
+  }
  
 ];
 
@@ -49,15 +53,17 @@ const FooterTop = () => {
       <div className="Footer-Wrapper">
         <div className="footertop">
           {
-              footerItem.map((FooterData) => { 
+              footerItem.map((FooterData,index) => { 
                   return (
-                      <>
-                <div className="footmenu">
-                  <h3>{FooterData.text}</h3>
+                   
+                <div className="footmenu" key={index}>
+                  <h3>{FooterData.text} <KeyboardArrowDown className="KeyDownArrow"/></h3> 
+               
                   <ul>
                     <li>
                       <NavLink to="#" className="MenuList">
                         {FooterData.link1}
+                        
                       </NavLink>
                       
                     </li>
@@ -79,19 +85,14 @@ const FooterTop = () => {
                     <li>
                       <NavLink to="#" className="MenuList">
                             {FooterData.link5}
-                        </NavLink>
+                        </NavLink>  
                     </li>
-                    <div className="MenuLine">
-                        <li>
-                        <NavLink to="#" className="MenuList">
-                            <h3>{FooterData.text1}</h3>
-                            {FooterData.link6}
-                        </NavLink>
-                        </li>
-                    </div>
+                    
+                     
+                    
                   </ul>
                 </div>
-              </>
+            
             );
           })}
         </div>

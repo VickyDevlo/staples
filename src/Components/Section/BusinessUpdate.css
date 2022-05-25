@@ -13,7 +13,7 @@
 }
 
 .secbottom {
-    align-items: normal;
+    align-items: center;
 }
 
 .secbottom_Text {
@@ -36,7 +36,7 @@
 }
 
 @media only screen and (max-width:767px) {
-    secbottom .secbottom_Item {
+         .secbottom_Item {
         margin-bottom: 10px;
     }
 }

@@ -69,6 +69,7 @@ const Products = () => {
                 {data.name}
                 <ArrowForwardIos style={{ fontSize: "small" }} />
               </Link>
+               
             </div>
           );
         })}

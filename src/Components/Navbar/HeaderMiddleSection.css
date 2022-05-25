@@ -11,6 +11,7 @@
 .Logo {
     max-width: 160px;
     width: 100%;
+    margin-left: 20px;
 }
 
 .SearchSection,
@@ -76,14 +77,15 @@
 .Menu-Section ul {
     list-style: none;
     display: flex;
-    padding: 0;
+    margin-left: -80px;
     
 }
 
 .Menu-Section ul li {
     border-left: 1px solid #e7e7e7;
+    width: 120px;
     min-height: 60px;
-    width: 100%;
+    
 }
 
 li button {
@@ -103,54 +105,264 @@ li button {
     margin-left: -15px;
     margin-top:5px;    
 }
+.Icons .MuiSvgIcon-root{
+    margin-left: 17px;
+    margin-top: -6px;
+}
 .icontext {
    text-transform: capitalize;
    position: relative;
    border: unset;
+   top: 18px;
+   left: 2px;
    color: rgb(49, 47, 47);     
 }   
+
 .Menu-Section ul li:first-child .Icons{
-     background-color: white;
-     position: relative;
-     color: rgb(73, 72, 72);
-     top:12px;
-     left: 20px;
+    position: relative;
+    color: rgb(73, 72, 72);
+    top:8px;
+    left: 14px;
 }
 
 .Menu-Section ul li:first-child .icontext{
-     background-color: white;
+    background-color: white;
      position: relative;
-     top: 4px;
+     top: 0px;
+     left: 10px;
      
 }
 .Menu-Section ul li:last-child .Icons{
   color: white;   
+  margin-left:-31px;
+  
 }
 
 .Menu-Section ul li:last-child .icontext{
     position: relative;
     color: white;
-    top: 25px;
+    top: 20px;
     left: -14px;
  
 }
 .Menu-Section ul li:last-child {
     position: relative;
+    margin-right: 30px;
     background-color: #c00;
     border-radius:0 0 5px 5px;
     width: 70px;
-    height: 70px;
+    height: 60px;
 }
 
 .Menu-Section ul li:last-child::after {
     min-height: 10px;
     width: 100%;
     position: absolute;
+    content: "";
+    background-color: #c00;
     z-index: 1;
     left: 0;
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 5px 5px;
     bottom: -6px;
 }
+.Form-Container{
+    width:310px;
+    height: 300px;
+    background-color: rgb(238, 238, 238);
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(218, 217, 217);
+}
+.Signin-span{
+    border: unset;
+    cursor: default;
+    color: #595959;
+    font-size: 16px;
+    font-weight: 700;
+}
+.Close-btn-span{
+    border: unset;
+    color: #595959;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.User-Span{
+    border: unset;
+    color: #595959;
+    cursor: default;
+    margin-left: 2px;
+}
+.Pass-Span{
+    border: unset;
+    color: #595959;
+    cursor: default;
+    margin-left: 2px;
+}
+.Pass{
+    margin-left:10px;
+    height: 40px;
+    width: 280px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.Save-User{
+    border: unset;
+    cursor: default;
+    color: #595959;
+    font-size: 15px;
+}
+.Check-box{
+    margin-left: 10px;
+}
+.Signup-btn{
+    border-radius: 30px;
+    border: 1px solid #c00;
+    width: 285px;
+    height: 40px;
+    font-size: 13px;
+    font-weight:600;
+    margin-left: 10px;
+    color: white;
+    background-color: #c00;
+}
+.Signup-btn:hover{
+    background:white;
+    transition: 0.2s;
+    color:#c00;
+}
+.Forgot{
+    font-size: 12px;
+    margin-left: 10px;
+    color: #595959
+}
+
+.Or{
+    border: unset;
+    cursor: default;
+    color: #595959;
+}
+.Forgot-User,.Forgot-Password{
+    color: #c00;
+    border: none;
+    background: transparent;
+    font-size: 10px;
+    text-decoration: underline;
+}
+.Lower-sec{
+    margin-top: 10px;
+}
+.form {
+    background: #f3f3f3;
+    position: absolute;
+    top:100px;
+    right: 230px;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+.form.open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    transform: translateY(0);
+}
+.Sign-btn {
+    background: #ffffff;
+    color: #595959;
+    cursor: pointer;
+    display: flex;
+    margin-top: -6px;
+    flex-direction: column;
+    border: none;
+    margin-left: auto;
+     
+}
+
+ 
+
+.menu {
+    background: #f3f3f3;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.Link-Btn {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Link-Btn button {
+    color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: left;
+    background-color: rgb(238, 238, 238);
+    height: 34px;
+}
+
+.Link-Btn a {
+    color: #595959;
+    font-size: 13px;
+    font-weight: 700; 
+    height: 30px;
+    margin: 4px;
+    border-bottom: 1px solid rgb(218, 217, 217);
+}
+.Link-Btn a:hover {
+    color: #c00;
+    background-color: #fff;
+}
+.menu.Active {
+    opacity: 1;
+    right: 100px;
+    top: 98px;
+    visibility: visible;
+    z-index: 2;
+    transform: translateY(0);
+}
+.cart {
+    background: #f3f3f3;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    border-top:5px solid #c00;
+    width: 350px;
+    height: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}   
+.Cart-Data{
+    width:auto;
+    height: 50px;
+    background-color: rgb(238, 238, 238); 
+}
+.Cart-msg{
+    font-size: 14px;
+    padding:30px 70px;
+    cursor: text;
+}
+.cart.show {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    transform: translateY(0);
+}
+
 
  /* Responsive code */
 @media only screen and (max-width:1023px) {
@@ -168,13 +380,9 @@ li button {
         border-top: 1px solid #e7e7e7;
     }
     .Icons{
-        visibility: visible;
-       
+        visibility: visible;  
     }
-    .icontext{
-        visibility: visible;
-        
-    }
+
 
     .SearchBax {
         margin: 0 auto;
@@ -188,7 +396,7 @@ li button {
 }
 
 @media only screen and (max-width:767px) {
-
+ 
     .Menu-Section ul li {
         min-width: 45px;
         min-height: auto;
@@ -200,12 +408,50 @@ li button {
     }
     .Icons{
         visibility: visible;
+        position: absolute;
        
     }
     .icontext{
         visibility: visible;
+        position: relative;
+        top: 34px;
         
     }
+    .Icons .MuiSvgIcon-root{
+        margin-left: 17px;
+        margin-top: 45px;
+    } 
+    .Menu-Section ul li:first-child .icontext{
+        position: relative;
+        top: -34px;
+        left: 78px;
+    }
+      .Menu-Section ul li:first-child .Icons{
+          position: relative;
+          top:-28px;
+          left: 80px;
+        }
+        .Menu-Section ul li:last-child .Icons{ 
+            margin-top:-30px;
+     }
+   .Menu-Section ul li:last-child .icontext{
+    position: relative;
+    top: 35px;
+    left: -14px;
+ 
+}
+.Header{
+    visibility: visible;
+
+}
+.helpsec{
+    position: relative;
+    top: -35px;
+    left: 15px;
+}
+.helpsec .icontext{
+    top: 72px;
+}
 
    
 }

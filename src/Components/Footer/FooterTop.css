@@ -4,13 +4,13 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top:50px;
   background-color: rgb(68,68,68);
   
 }
 .footertop {
   display: flex;
-  padding: 50px 0 10px 0;
-  
+  padding: 50px 0px 10px 0px;
 }
 
 .footmenu {
@@ -21,7 +21,7 @@
 
 .footmenu h3 {
   margin-left: 10px;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
   font-weight:700;
 }
@@ -32,15 +32,32 @@
 .MenuList:hover{
     color: white;
 }
+.MenuList h3{
+  cursor: text;
+}
 .MenuLine{
   margin-top: -70px;
 }
+.FooterText{
+  border: unset;
+  color: white;
+  margin-left: 9px;
+}
+ 
  
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.KeyDownArrow{
+  color: white;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+ 
 }
 
 .footmenu ul li {
@@ -130,7 +147,7 @@ img {
  
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   .footmid {
     flex-wrap: wrap;
   }
@@ -143,5 +160,18 @@ img {
 
   .footertop {
     flex-direction: column;
+    
+  }
+  .KeyDownArrow{
+    visibility: visible;
+  }
+ 
+  .footmenu h3{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .footmenu ul li{
+    display: none;
   }
 }

@@ -10,8 +10,90 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
+}
+.Product,
+.Services,
+.Brand,
+.Deal,
+.Publications,
+.User {
+    border: 0;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    flex-direction: row-reverse;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+
+}
+.ItemList li .Product-btn{
+    color: #444;
+    background-color: transparent;
+    border: none;
+    border: 1px solid transparent;
+    overflow: visible;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
 
+.ItemList li .Service-btn {
+    color: #444;
+    border: none;
+    background-color: transparent;
+    overflow: visible;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ItemList li .Brand-btn {
+    color: #444;
+    border: none;
+    background-color: transparent;
+    overflow: visible;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ItemList li .Deal-btn {
+    color: #444;
+    border: none;
+    background-color: transparent;
+    overflow: visible;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ItemList li .Pub-btn {
+    color: #444;
+    border: unset;
+    background-color: transparent;
+    overflow: visible;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+ .Cus-btn{
+    color: #444;
+    overflow: visible;
+    border: unset;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: transparent;  
+    font-family: 'Poppins', sans-serif;
+}
+.ItemList li a{
+    text-decoration: none;
+}
+
+.ItemList button:focus {
+    color: #c00;
+}
 li{
     padding: 6px 25px;
     text-transform: uppercase;
@@ -21,22 +103,260 @@ li{
     font-weight: 500;
     cursor: pointer;
 }
+.rotate.Active {
+    transform: rotate(180deg);
+    transition: 0.1s;
+}
+.productmenu {
+    background: #f3f3f3;
+    color: #c00;
+    position: absolute;
+    top: 65px;
+    right: -105px;
+    width: 280px;
+    height: 780px;
+    list-style: none;
+    opacity: 0;
+    z-index: 20px;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
 
+.productmenu.Active {
+    z-index: 1px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.productmenu li {
+    color: #444;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: none;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: -3px;
+    display: block;
+}
+
+.productmenu li:hover {
+    background: #ffffff;
+    color: #c00;
+}
+.servicemenu {
+    background: #f3f3f3;
+    color: #c00;
+    position: absolute;
+    top: 62px;
+    right: 120px;
+    width: 280px;
+    list-style: none;
+    opacity: 0;
+    z-index: 20px;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+
+.servicemenu.Active {
+    z-index: 2px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.servicemenu li {
+    color: #444;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: none;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: -3px;
+    display: block;
+}
+
+.servicemenu li:hover {
+    background: #ffffff;
+    color: #c00;
+}
+
+.brandmenu {
+    background: #f3f3f3;
+    color: #c00;
+    position: absolute;
+    top: 64px;
+    right: 242px;
+    width: 280px;
+    list-style: none;
+    opacity: 0;
+    z-index: 20px;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+
+.brandmenu.Active {
+    z-index: 2px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.brandmenu li {
+    color: #444;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: none;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: -3px;
+    display: block;
+}
+
+.brandmenu li:hover {
+    background: #ffffff;
+    color: #c00;
+}
+
+.dealmenu {
+    background: #f3f3f3;
+    color: #c00;
+    position: absolute;
+    top: 64px;
+    right: 355px;
+    width: 280px;
+    list-style: none;
+    opacity: 0;
+    z-index: 20px;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+
+.dealmenu.Active {
+    z-index: 2px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dealmenu li {
+    color: #444;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: none;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: -3px;
+    display: block;
+}
+
+.dealmenu li:hover {
+    background: #ffffff;
+    color: #c00;
+}
+
+.publicmenu {
+    background: #f3f3f3;
+    color: #c00;
+    position: absolute;
+    top: 64px;
+    right: 520px;
+    width: 280px;
+    list-style: none;
+    opacity: 0;
+    z-index: 20px;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+ 
+}
+
+
+.publicmenu.Active {
+    z-index: 2px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.publicmenu li {
+    color: #444;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: none;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin-left: -3px;
+    display: block;
+}
+
+.publicmenu li:hover {
+    background: #ffffff;
+    color: #c00;
+}
 .Menu .Bar-Btn {
     display: none;
+}
+.menubar.open{
+    display: none;
+
+}
+.menubarbarlist{
+   display: none;
+}
+.menubarbarlist.Active {
+    z-index: 2px;
+    opacity: 1;
+    visibility: visible;
+ 
 }
 
 
 @media only screen and (max-width:767px) {
-.Menu .Bar-Btn {
-    position: absolute;
-    top: 68px;
-    left: 3px;
-    display: block;
-    visibility: visible;
-}
-
-.Menu .ItemList {
-    display: none;
-}
+    .Menu .Bar-Btn {
+        position: absolute;
+        color: black;
+        top: 68px;
+        left: -3px;
+        display: block;
+        visibility: visible;
+    }
+    .close-btn{
+        position: absolute;
+        color: black;
+        top: 0px;
+        left: 9px;
+    }
+    .Menu .ItemList {
+        display: none;
+    }
+    .menubarbarlist.Active{
+        display: block;
+        visibility: visible;
+     
+    }
+   
+     
 }

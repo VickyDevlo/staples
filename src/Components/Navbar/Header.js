@@ -21,7 +21,6 @@ const Header = () => {
         </div>
         <div>
           <span className="Icon">
-            
             <HeadsetMicRounded onClick={ChatHandler}  />
           </span>
           <span onClick={ChatHandler}>Live chat</span>
