@@ -40,7 +40,7 @@ const HeaderMiddleSection = () => {
                 onChange={searchHandle}
               />
               <button className="SearchBtn">
-                <SearchOutlined style={{ fontSize: "midium" }} />
+                <SearchOutlined style={{ fontSize: "midium" }} /> 
               </button>
             </div>
             <div className="InkBtn">
