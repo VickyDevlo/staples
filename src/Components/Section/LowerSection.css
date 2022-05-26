@@ -1,4 +1,4 @@
-.flyer {
+ .flyer {
     display: flex;
     justify-content: space-between;
     gap: 6px;
@@ -41,17 +41,6 @@ a:hover{
 
 .flyer {
         flex-wrap: wrap;
-
     }
-.imgflyer{
-    display: block;
-    width: 100%;
-}
-
-.topflyer {
-
-        flex: 1 1 100%;
-        margin: 10px 0px 0;
-    }
-
+    
 }

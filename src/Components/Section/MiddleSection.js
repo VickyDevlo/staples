@@ -14,7 +14,6 @@ const MiddleSection = (props) => {
         <Link to='/productimg'>
         <img src={props.img2} alt="heroimg"/> 
         </Link>
-        
         </div>
       </div>
     </div>

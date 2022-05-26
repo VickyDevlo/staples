@@ -1,7 +1,8 @@
 import React, { useState,useRef } from "react";
 import "./MenuList.css";
 import { DehazeOutlined,KeyboardArrowDown, CloseOutlined} from "@material-ui/icons";
-import { NavLink } from "react-router-dom";
+import { NavLink  } from "react-router-dom";
+ 
 
 const  MenuList = () => {
 
@@ -448,10 +449,12 @@ const  MenuList = () => {
             <NavLink to="/become-a-customer">
               <span className="Cus-btn">BECOME A CUSTOMER </span>
             </NavLink>
+             
           </li>
           
         </ul>
       </div>
+     
     </div>
   );
 };

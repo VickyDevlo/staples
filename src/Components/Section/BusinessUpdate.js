@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { ArrowForwardIos } from '@material-ui/icons'
 import "./BusinessUpdate.css";
@@ -17,9 +17,10 @@ const BusinessUpdate = () => {
     <div>
       <div className='ImgWrapper secbottom'>
         {
-        imgItem.map((imgvalue) => {
+        imgItem.map((imgvalue, index) => {
           return (
-          <>
+        <React.Fragment key={index}>
+
               <div className='secbottom topsecItem'>
                 <Link to='/businessupdate'>
                   <img src={imgvalue.imgsrc} alt="heroimg"/>
@@ -31,7 +32,8 @@ const BusinessUpdate = () => {
                     {imgvalue.links} <ArrowForwardIos style={{fontSize:'small'}}/>
                </Link>
               </div>
-          </>
+          </React.Fragment>
+          
            
           );
         })
