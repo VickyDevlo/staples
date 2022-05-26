@@ -25,7 +25,9 @@ const BottomSection = () => {
         return (
           <div className="Wrapper" key={index}>
             <div className="Img_Container">
-              <img src={DataList.img1} alt="img" />
+            <NavLink to={DataList.link1}>
+            <img src={DataList.img1} alt="img" />
+            </NavLink>
               <div className='imgText'>
               <p>{DataList.textLine1} </p>
               <NavLink to={DataList.link1}>
@@ -36,7 +38,10 @@ const BottomSection = () => {
               </div>
             </div>
             <div className="Img_Container">
-              <img src={DataList.img2} alt="img" />
+            <NavLink to={DataList.link2}>
+            <img src={DataList.img2} alt="img" />
+              </NavLink>
+              
               <div className='imgText'>
               <p>{DataList.textLine2} </p>
               <NavLink to={DataList.link2}>

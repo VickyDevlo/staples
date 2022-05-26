@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Cards.css";
 
 const Card = [
@@ -22,10 +23,15 @@ const Cards = () => {
         return (
           <div className="topsection" key={index}>
             <div className="topsecItem">
+              <Link to='/produtimg'>
               <img src={DataList.img1} alt="img" />
+              </Link>
             </div>
             <div className="topsecItem">
-              <img src={DataList.img2} alt="img" />
+            <Link to='/produtimg'>
+            <img src={DataList.img2} alt="img" />
+              </Link>
+              
             </div>
           </div>
         );

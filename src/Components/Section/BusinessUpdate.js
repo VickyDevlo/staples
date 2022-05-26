@@ -17,11 +17,13 @@ const BusinessUpdate = () => {
     <div>
       <div className='ImgWrapper secbottom'>
         {
-        imgItem.map((imgvalue,index) => {
+        imgItem.map((imgvalue) => {
           return (
           <>
               <div className='secbottom topsecItem'>
-                <img src={imgvalue.imgsrc} alt="heroimg"/>
+                <Link to='/businessupdate'>
+                  <img src={imgvalue.imgsrc} alt="heroimg"/>
+                </Link>
               </div>
               <div className='secbottom_Text'>
                 <p>{imgvalue.para}</p>
