@@ -332,7 +332,15 @@ li{
     visibility: visible;
  
 }
-
+.menubarproduct.open{
+    visibility: visible;
+}
+.menubarproduct.close{
+    display: none;
+}
+.showproduct.show{
+   visibility: hidden;
+}
 
 @media only screen and (max-width:767px) {
     .Menu .Bar-Btn {

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useRef} from "react";
 import "./FooterTop.css";
 import {
   LinkedIn,
@@ -10,91 +10,149 @@ import {
 import { KeyboardArrowDown} from '@material-ui/icons'
 import { NavLink } from "react-router-dom";
 
-const footerItem = [
-  {
-    text: "Customer Service",
-    link1: "Help Center",
-    link2: "Contact Us",
-    link3: "Recall Information",
-    link4: "Safety Data Sheets",
-  },
-  {
-    text: "Corporate Info",
-    link1: "Staples Professional Overview",
-    link2: "Industries Served",
-    link3: "Blog",
-    link4: "Our Brands",
-  },
-  {
-    text: "Staples Corporate Solutions",
-    link1: "Office Products",
-    link2: "Technology Products",
-    link3: "Furniture",
-    link4: "Facilities",
-    link5: "Promotional Products",
-  },
-  {
-    text: "New Customers",
-    link1: "Become a Customer",
-    link2: "Govt. Customers",
-    link3: "Membership",
-    
-  },
-  {
-    text:"Join the Staples Team",
-    link1:"Careers"
-  }
- 
-];
 
 const FooterTop = () => {
+  const List = useRef(null);
+
+  const [FooteList, setFooteList] = useState(List)
+  const [Corporate, setCorporate] = useState(List)
+  const [Solution, setSolution] = useState(List)
+  const [NewCust, setNewCust] = useState(List)
+  const [Join, setJoin] = useState(List)
+
+  const Footerhandler = () => setFooteList(!FooteList);
+  const CorporateFooterhandler = () => setCorporate(!Corporate);
+  const SolutionFooterhandler = () => setSolution(!Solution);
+  const NewcustFooterhandler = () => setNewCust(!NewCust);
+  const JoinFooterhandler = () => setJoin(!Join);
   return (
     <div>
       <div className="Footer-Wrapper">
         <div className="footertop">
-          {
-              footerItem.map((FooterData,index) => { 
-                  return (
-                   
-                <div className="footmenu" key={index}>
-                  <h3>{FooterData.text} <KeyboardArrowDown className="KeyDownArrow"/></h3> 
-               
-                  <ul>
-                    <li>
-                      <NavLink to="#" className="MenuList">
-                        {FooterData.link1}
-                        
-                      </NavLink>
-                      
-                    </li>
-                    <li>
-                      <NavLink to="#" className="MenuList">
-                        {FooterData.link2}
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="#" className="MenuList">
-                        {FooterData.link3}
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="#" className="MenuList">
-                        {FooterData.link4}
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="#" className="MenuList">
-                            {FooterData.link5}
-                        </NavLink>  
-                    </li>
+          
+              <div className="footmenu" >
+                <h3 onClick={Footerhandler}>Customer Service<KeyboardArrowDown className={`Keyrotate ${FooteList ? "Inactive" : "Active"}`}/></h3> 
+              
+                <ul className={`footer-menu ${FooteList ? "close" : "open"}`}>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Help Center
+                    </NavLink>     
+                  </li>                                           
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Contact Us
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Recall Information
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Safety Data Sheets
+                    </NavLink>
+                  </li>                                 
+                </ul>
+              </div>
+              <div className="footmenu" >
+                <h3 onClick={CorporateFooterhandler}>Corporate Info<KeyboardArrowDown className={`Keyrotate ${Corporate ? "Inactive" : "Active"}`}/></h3>  
+              
+                <ul className={`footer-menu ${Corporate ? "close" : "open"}`}>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Staples Professional Overview
+                    </NavLink>
                     
-                     
+                  </li>                                           
+ 
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Industries Served
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Blog
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Our Brands
+                    </NavLink>
+                  </li>                                 
+                </ul>
+              </div>
+              <div className="footmenu" >
+                <h3 onClick={SolutionFooterhandler}>Staples Corporate Solutions<KeyboardArrowDown className={`Keyrotate ${Solution ?  "Inactive" : "Active"}`}/></h3> 
+              
+                <ul className={`footer-menu ${Solution ? "close" : "open"}`}>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Office Products
+                    </NavLink>        
+                  </li>                                            
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Technology Products
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Furniture
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Facilities
+                    </NavLink>
+                  </li>                                 
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Promotional Products
+                    </NavLink>
+                  </li>                                 
+                </ul>
+              </div>
+              <div className="footmenu newcustomer" >
+                <h3 onClick={NewcustFooterhandler}>New Customers<KeyboardArrowDown className={`Keyrotate ${NewCust ?  "Inactive" : "Active"}`}/></h3> 
+              
+                <ul className={`footer-menu ${NewCust ? "close" : "open"}`}>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Become a Customer
+                    </NavLink>
                     
-                  </ul>
-                </div>
-            
-            );
-          })}
+                  </li>                                           
+       
+ 
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Govt. Customers
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Membership
+                    </NavLink>
+                  </li>                              
+                </ul>
+              </div>
+              <div className="footmenu LastFoterMenu" >
+                <h3 onClick={JoinFooterhandler}>Join the Staples Team<KeyboardArrowDown className={`Keyrotate ${Join ?  "Inactive" : "Active"}`}/></h3> 
+              
+                <ul className={`footer-menu ${Join ? "close" : "open"}`}>
+                  <li>
+                    <NavLink to="#" className="MenuList">
+                    Careers
+                    </NavLink>
+                    
+                  </li>                                                       
+                </ul>
+              </div>
+          
+             
         </div>
       </div>
 
