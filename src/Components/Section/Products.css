@@ -19,6 +19,7 @@
     max-width: calc(25% - 6px);
     flex: 0 0 100%;
     margin: 0px 2px 20px;
+    /* overflow: hidden; */
 }
 
 .product_img {
@@ -35,7 +36,7 @@
 a {
     text-decoration: none;
     text-transform: capitalize;
-    color: red;
+    color: #c00;
 }
 
 @media only screen and (max-width:767px){

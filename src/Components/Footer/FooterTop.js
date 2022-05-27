@@ -8,7 +8,7 @@ import {
   Instagram,
 } from "@material-ui/icons";
 import { KeyboardArrowDown} from '@material-ui/icons'
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const FooterTop = () => {
@@ -35,22 +35,22 @@ const FooterTop = () => {
               
                 <ul className={`footer-menu ${FooteList ? "close" : "open"}`}>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="/helpcenter" className="MenuList">
                     Help Center
                     </NavLink>     
                   </li>                                           
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="/contactus" className="MenuList">
                     Contact Us
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="recallinformation" className="MenuList">
                     Recall Information
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="/safetydatasheets" className="MenuList">
                     Safety Data Sheets
                     </NavLink>
                   </li>                                 
@@ -61,24 +61,24 @@ const FooterTop = () => {
               
                 <ul className={`footer-menu ${Corporate ? "close" : "open"}`}>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="/staplesprofessionaloverview" className="MenuList">
                     Staples Professional Overview
                     </NavLink>
                     
                   </li>                                           
  
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="industriesserved" className="MenuList">
                     Industries Served
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="/blog" className="MenuList">
                     Blog
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="/ourbranads" className="MenuList">
                     Our Brands
                     </NavLink>
                   </li>                                 
@@ -89,27 +89,27 @@ const FooterTop = () => {
               
                 <ul className={`footer-menu ${Solution ? "close" : "open"}`}>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="officeproducts" className="MenuList">
                     Office Products
                     </NavLink>        
                   </li>                                            
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="technologyproducts" className="MenuList">
                     Technology Products
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="/furniture" className="MenuList">
                     Furniture
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="/facilities" className="MenuList">
                     Facilities
                     </NavLink>
                   </li>                                 
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="promotionalproducts" className="MenuList">
                     Promotional Products
                     </NavLink>
                   </li>                                 
@@ -120,7 +120,7 @@ const FooterTop = () => {
               
                 <ul className={`footer-menu ${NewCust ? "close" : "open"}`}>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="becomeacutomer" className="MenuList">
                     Become a Customer
                     </NavLink>
                     
@@ -128,12 +128,12 @@ const FooterTop = () => {
        
  
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="govtcustomers" className="MenuList">
                     Govt. Customers
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="/membership" className="MenuList">
                     Membership
                     </NavLink>
                   </li>                              
@@ -144,7 +144,7 @@ const FooterTop = () => {
               
                 <ul className={`footer-menu ${Join ? "close" : "open"}`}>
                   <li>
-                    <NavLink to="#" className="MenuList">
+                    <NavLink to="careers" className="MenuList">
                     Careers
                     </NavLink>
                     
@@ -179,14 +179,13 @@ const FooterTop = () => {
             </div>
           </div>
           <div className="midImg">
-            <img
-              src="https://www.eway.ca/static/img/bullfrogpower.svg"
-              alt="img"
-            ></img>
-            <img
-              src="https://www.eway.ca/static/img/accessibility-logo.svg"
-              alt="img"
-            ></img>
+            <Link to='/bullfrogpower'>
+              <img
+                src="https://www.eway.ca/static/img/bullfrogpower.svg" alt="img" />
+            </Link>
+            <Link to ='/accessibility'>
+              <img src="https://www.eway.ca/static/img/accessibility-logo.svg" alt="img"/>
+            </Link>
           </div>
         </div>
       </div>

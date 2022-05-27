@@ -18,17 +18,17 @@
   flex: 1 1 50%;
   padding: 0 4px;
   margin-bottom: 15px;
-  margin-left: 14px;
+  margin-left: -11px;
 }
 .LastFoterMenu h3{
   position: relative;
   left: -188px;
-  top: 135px;
+  top: 130px;
 }
 .LastFoterMenu ul li{
   position: relative;
   left: -188px;
-  top: 135px;
+  top: 120px;
 }
 .newcustomer h3{
   position: relative;
@@ -63,9 +63,7 @@
   border: unset;
   color: white;
   margin-left: 9px;
-}
- 
- 
+} 
 
 ul {
   list-style: none;
@@ -91,10 +89,12 @@ ul {
 
 .midImg {
   display: flex;
+  
 }
 
 .midImg img {
-  width: 48%;
+  width:90%;
+  margin-left: 20px;
 }
 
 .miditem h5 {

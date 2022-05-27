@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     gap: 6px;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 
 .topflyer {
@@ -29,11 +29,11 @@ p {
 }
 
 a {
-    color: red;
+    color: #c00;
     text-decoration: none;
 }
 a:hover{
-    color: red;
+    color: #c00;
     text-decoration: none;
 }
 

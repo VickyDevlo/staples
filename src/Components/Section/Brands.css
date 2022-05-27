@@ -13,6 +13,7 @@
     border: unset;
     color: #c00;
     font-size: 24px;
+    cursor: text ;
 }
 .BrandItem {
     margin: 10px 3px 0;

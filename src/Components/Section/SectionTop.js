@@ -6,12 +6,12 @@ const SectionTop = (props) => {
     <>
       <div className='topsection'>
         <div className='topsecItem'>
-          <Link to='/'>
+          <Link to='/shopnow'>
             <img src={props.img1} alt="heroimg"/>
           </Link>
         </div>
         <div className='rightText topsecItem'>
-          <Link to='/'>
+          <Link to='/shopnow'>
             <img src={props.img2} alt="heroimg"/>
           </Link>
         </div>

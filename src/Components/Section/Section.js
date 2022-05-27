@@ -7,7 +7,8 @@ import Products from "./Products";
 import Cards from "./Cards";
 import BottomSection from "./BottomSection";
 import Brands from "./Brands";
-import BusinessUpdate from './BusinessUpdate'
+import BusinessUpdate from "./BusinessUpdate";
+
 const Section = () => {
   return (
     <div className="container">
@@ -23,9 +24,9 @@ const Section = () => {
         img1="https://static.eway.ca/content/landingpage/198/en/EWAY_FLYERICON_LEFT.png"
         img2="https://static.eway.ca/content/landingpage/198/en/EWAY_PUBLICATIONICON_RIGHT.png"
       />
-      <Products/>
+      <Products />
       <Cards />
-      <BottomSection/>
+      <BottomSection />
       <Brands />
       <BusinessUpdate />
     </div>

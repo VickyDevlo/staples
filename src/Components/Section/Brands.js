@@ -6,25 +6,31 @@ const imgItem = [
   {
     imgsrc:
       "https://static.eway.ca/content/landingpage/198/en/EWAY_TRU_RED.png",
+    link:'/trured',
   },
   {
     imgsrc:
       "https://static.eway.ca/content/landingpage/198/en/EWAY_NXT_TECHNOLOGIES.png",
+    link:'/nxttechnologes',
   },
   {
     imgsrc:
       "https://static.eway.ca/content/landingpage/198/en/EWAY_UNION_AND_SCALE.png",
+    link:'/unionscale',
   },
   {
     imgsrc:
       "https://static.eway.ca/content/landingpage/198/en/EWAY_GRYMATTR.png",
+    link:'/grymatter',
   },
   {
     imgsrc: "https://static.eway.ca/content/landingpage/198/en/EWAY_PERK.png",
+    link:'/perk',
   },
   {
     imgsrc:
       "https://static.eway.ca/content/landingpage/198/en/EWAY_COASTWIDE.png",
+    link:'/coastwide'
   },
 ];
 const Brands = () => {
@@ -35,11 +41,13 @@ const Brands = () => {
       </p>
 
       <div  className="brands">
-        {imgItem.map((imgvalue, index) => {
+        {imgItem.map((itmes, index) => {
           return (
             <div className="BrandItem" key={index}>
                 <div className="BrnadImg">
-                    <img src={imgvalue.imgsrc} alt="heroimg" />
+                  <Link to={itmes.link}>
+                    <img src={itmes.imgsrc} alt="heroimg" />
+                  </Link>
 
                 </div>
             </div>

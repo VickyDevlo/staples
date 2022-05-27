@@ -2,6 +2,7 @@ import React from "react";
 import "./LowerSection.css";
 import { ArrowForwardIos } from "@material-ui/icons";
 import { Link } from "react-router-dom";
+
 const LowerSection = (props) => {
   return (
     <div>
@@ -13,7 +14,7 @@ const LowerSection = (props) => {
           <div className="textflyer">
             <h4>Flyers</h4>
             <p>Get the latest deals on the products your business needs.</p>
-            <Link to="/view now">
+            <Link to="/viewnow">
               VIEW NOW <ArrowForwardIos style={{ fontSize: "small" }} />
             </Link>
           </div>
@@ -27,7 +28,7 @@ const LowerSection = (props) => {
             <p>
               Browse our wide range of products and solutions for your business.
             </p>
-            <Link to="/view now">
+            <Link to="/viewnow">
               VIEW NOW <ArrowForwardIos style={{ fontSize: "small" }} />
             </Link>
           </div>

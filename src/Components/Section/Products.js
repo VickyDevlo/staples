@@ -63,13 +63,12 @@ const Products = () => {
           return (
             <div className="productItem" key={index}>
               <div className="product_img">
-                <img src={data.imgsrc} alt="product img" />
+                <Link to={data.link}>
+                  <img src={data.imgsrc} alt="product_img" />
+                  {data.name}
+                  <ArrowForwardIos style={{ fontSize: "small" }} />
+                </Link>
               </div>
-              <Link to={data.link}>
-                {data.name}
-                <ArrowForwardIos style={{ fontSize: "small" }} />
-              </Link>
-               
             </div>
           );
         })}
